@@ -11,11 +11,11 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-public class GreenLightsTest {
+public class TrafficSignalsTest {
 
     @Test
     public void countWaiting() throws Exception {
-        GreenLights o = new GreenLights();
+        TrafficSignals o = new TrafficSignals();
         List<WaitingCount> stats = o.countWaiting(20);
         List<WaitingCount> expStats = loadStats("/20seconds.csv");
         assertEquals(expStats, stats);
@@ -37,7 +37,7 @@ public class GreenLightsTest {
 
     @Test
     public void countWaitingInvalidLimit() throws Exception {
-        GreenLights o = new GreenLights();
+        TrafficSignals o = new TrafficSignals();
         List<WaitingCount> stats = o.countWaiting(-1);
         assertTrue(stats.isEmpty());
     }

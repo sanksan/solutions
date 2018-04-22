@@ -1,9 +1,8 @@
-# solutions
+# Solution for Problem 2: Traffic Signals.
 
+This solution counts the waiting cars on all directions based on the input. It gives the counts for the first 20 seconds by default. The limit of 20 seconds could be altered by passing in a parameter. The program considers the duration of green, red signal and the delay for transition from red to green. It uses overloaded method for changing the values if desired. The unit test cases cover negative scenarios and validates the waiting counts for the first 20 seconds based on expected output.
 
-Solutions to green lights.
-
-
+```
 ## Sample output for the first 20s
 0: N = 0; S = 0; E = 0; W = 0
 1: N = 0; S = 0; E = 1; W = 1
@@ -26,6 +25,7 @@ Solutions to green lights.
 18: N = 12; S = 12; E = 14; W = 14
 19: N = 12; S = 12; E = 15; W = 15
 20: N = 13; S = 13; E = 16; W = 16
+```
 
 ```
 

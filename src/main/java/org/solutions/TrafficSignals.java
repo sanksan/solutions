@@ -3,9 +3,9 @@ package org.solutions;
 import java.util.ArrayList;
 import java.util.List;
 
-class GreenLights {
+class TrafficSignals {
     public static void main(String[] args) {
-        GreenLights o = new GreenLights();
+        TrafficSignals o = new TrafficSignals();
         int limit = args.length > 1 ? Integer.parseInt(args[0]) : 20;
         List<WaitingCount> result = o.countWaiting(limit);
         int i = 0;
