@@ -4,14 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 class TrafficSignals {
-    public static void main(String[] args) {
-        TrafficSignals o = new TrafficSignals();
-        int limit = args.length > 1 ? Integer.parseInt(args[0]) : 20;
-        List<WaitingCount> result = o.countWaiting(limit);
-        int i = 0;
-        for (WaitingCount stat : result)
-            System.out.println(String.format("%d: %s", i++, stat));
-    }
 
     public List<WaitingCount> countWaiting(int limit) {
         return countWaiting(limit, 3, 1, 2);
